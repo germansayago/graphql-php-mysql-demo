@@ -5,10 +5,11 @@ use GraphQL\Type\Schema;
 
 require('types.php');
 require('query.php');
+require('mutations.php');
 
 $schema = new Schema([
   'query' => $rootQuery,
-  'mutations' => null,
+  'mutation' => $rootMutation
 ]);
 
 try {
